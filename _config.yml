@@ -2,3 +2,8 @@ name: MIT Club of Boston
 pygments: true
 markdown: rdiscount
 baseurl: /mit-cob-redesign
+navigation:
+  - about
+  - events
+  - news
+  - "Contact Us"
