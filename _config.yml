@@ -3,7 +3,7 @@ pygments: true
 markdown: rdiscount
 baseurl: /mit-cob-redesign
 navigation:
-  - about
-  - events
-  - news
+  - About
+  - Events
+  - News
   - "Contact Us"
