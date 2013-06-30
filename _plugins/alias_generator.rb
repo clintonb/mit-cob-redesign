@@ -40,13 +40,13 @@ module Jekyll
 
     def process_posts
       @site.posts.each do |post|
-        generate_aliases(post.url, post.data['alias'])
+        generate_aliases(@site.baseurl + post.url, post.data['alias'])
       end
     end
 
     def process_pages
       @site.pages.each do |page|
-        generate_aliases(page.destination('').gsub(/index\.(html|htm)$/, ''), page.data['alias'])
+        generate_aliases(@site.baseurl + page.destination('').gsub(/index\.(html|htm)$/, ''), page.data['alias'])
       end
     end
 
