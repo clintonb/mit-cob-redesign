@@ -12,8 +12,8 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     {% for item in site.navigation %}
-                        <li {% if page.navbar-active == item %}class="active"{% endif %}>
-                            <a href="{{ site.baseurl }}/{{ item | handleize }}.html">{{ item }}</a>
+                        <li {% if page.navbar-active == item.token %}class="active"{% endif %}>
+                            <a href="{{ site.baseurl }}/{{ item.url }}">{{ item.text }}</a>
                         </li>
                     {% endfor %}
                     <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->

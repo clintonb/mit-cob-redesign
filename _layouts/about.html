@@ -1,0 +1,35 @@
+---
+layout: page
+navbar-active: about
+---
+<style>
+    .affix {
+        top: 50px;
+    }
+</style>
+<div class="page-header">
+    <h1>About
+        <small>{{ page.title }}</small>
+    </h1>
+
+</div>
+
+<div class="row">
+    <div class="span9">
+        {{ content }}
+    </div>
+    <div class="span3">
+        <div data-spy="affix" data-offset-top="130">
+            <div class="well">
+                <ul class="nav nav-list">
+                    <li class="nav-header">About</li>
+                    {% for item in site.about_navigation %}
+                        <li {% if page.about-navbar-active == item.token %}class="active"{% endif %}>
+                            <a href="{{ site.baseurl }}/about/{{ item.token }}.html">{{ item.text }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

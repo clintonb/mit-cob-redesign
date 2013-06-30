@@ -3,7 +3,26 @@ pygments: true
 markdown: rdiscount
 baseurl: /mit-cob-redesign
 navigation:
-  - About
-  - Events
-  - News
-  - "Contact Us"
+  - text: About
+    token: about
+    url: about
+  - text: Events
+    token: events
+    url: events
+  - text: News
+    token: news
+    url: news
+  - text: Contact Us
+    token: contact-us
+    url: contact.html
+about_navigation:
+  - text: History & Leadership
+    token: history
+  - text: Groups & Committees
+    token: groups
+  - text: Sponsorship
+    token: sponsorship
+  - text: Scholarship Fund
+    token: scholarship
+  - text: Branding
+    token: branding
