@@ -2,6 +2,16 @@ name: MIT Club of Boston
 pygments: true
 markdown: rdiscount
 baseurl: /mit-cob-redesign
+
+assets:
+  gzip: false
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/bootstrap/javascripts
+    - _assets/bootstrap/stylesheets
+
 navigation:
   - text: About
     token: about
@@ -15,6 +25,7 @@ navigation:
   - text: Contact Us
     token: contact-us
     url: contact.html
+
 about_navigation:
   - text: History & Leadership
     token: history

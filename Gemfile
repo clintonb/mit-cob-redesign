@@ -1,4 +1,10 @@
 source 'https://rubygems.org'
+
 gem 'jekyll'
-gem "therubyracer"
-gem 'less'
+
+group :assets do
+    gem 'jekyll-assets'
+    gem 'less'
+    gem 'therubyracer', :platforms => :ruby
+    gem 'coffee-script'
+end
