@@ -19,16 +19,20 @@ navbar-active: about
         {{ content }}
     </div>
     <div class="span3">
-        <div data-spy="affix" data-offset-top="130">
-            <div class="well">
-                <ul class="nav nav-list">
-                    <li class="nav-header">About</li>
-                    {% for item in site.about_navigation %}
-                        <li {% if page.about-navbar-active == item.token %}class="active"{% endif %}>
-                            <a href="{{ site.baseurl }}/about/{{ item.token }}.html">{{ item.text }}</a>
+        <div data-spy="affix" data-offset-top="130" data-clampedwidth=".span3">
+
+            <div class="nav-collapse">
+                <div class="well">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">About</li>
+                        {% for item in site.about_navigation %}
+                        <li
+                        {% if page.about-navbar-active == item.token %}class="active"{% endif %}>
+                        <a href="{{ site.baseurl }}/about/{{ item.token }}.html">{{ item.text }}</a>
                         </li>
-                    {% endfor %}
-                </ul>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
