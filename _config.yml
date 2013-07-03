@@ -4,6 +4,7 @@ markdown: rdiscount
 baseurl: /mit-cob-redesign
 
 assets:
+  #baseurl: /mit-cob-redesign/assets
   gzip: false
   sources:
     - _assets/images
