@@ -8,6 +8,7 @@ assets:
   gzip: false
   sources:
     - _assets/images
+    - _assets/images/logo
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/bootstrap/javascripts
